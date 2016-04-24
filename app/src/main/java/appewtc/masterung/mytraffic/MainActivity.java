@@ -28,8 +28,18 @@ public class MainActivity extends AppCompatActivity {
         //Button Controller
         buttonController();
 
+        //ListView Controller
+        listViewController();
+
 
     }   // Main Method
+
+    private void listViewController() {
+
+
+
+
+    }   // listViewController
 
     private void buttonController() {
 

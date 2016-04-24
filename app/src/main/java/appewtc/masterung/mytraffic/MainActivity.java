@@ -1,6 +1,8 @@
 package appewtc.masterung.mytraffic;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -38,6 +40,17 @@ public class MainActivity extends AppCompatActivity {
                 //Sound Effect
                 MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.cow);
                 mediaPlayer.start();
+
+                //Intent to WebView
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://youtu.be/AFmWqLIqDZA"));
+                startActivity(intent);
+
+                //Intent to Call
+//                Intent intent = new Intent(Intent.ACTION_CALL);
+//                intent.setData(Uri.parse("tel:0818595309"));
+//                startActivity(intent);
+
 
             }   // onClick
         });
